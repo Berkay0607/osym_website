@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ÖSYM Sonuç Açıklama Sistemi</title>
+        
+        <style type="text/css">
+            body {
+                margin: 0 auto
+            }
+
+            div {
+                text-align: center
+            }
+
+            span,a,input,label {
+                display: block;
+                margin: 5px
+            }
+
+            input,label {
+                width: 140px;
+                float: left
+            }
+
+            label {
+                width: 190px;
+                text-align: right;
+                font-weight: bold;
+                padding-right: 10px
+            }
+
+            br {
+                clear: both
+            }
+
+            input[type="submit"] {
+                border: solid 1px #d93;
+                background: #ddd;
+                font-weight: bold;
+                height: 24px;
+                width: 120px;
+                float: right;
+                margin-right: 11px;
+                cursor: pointer
+            }
+
+            input[type="submit"]:hover {
+                border-color: #ec5
+            }
+
+            #frm {
+                width: 370px;
+                margin: 30px auto;
+                padding: 10px;
+                border: solid 1px #aaa;
+                background-color: #f3f3f3
+            }
+
+            #vs {
+                background: #ddd
+            }
+
+            .osym {
+                color: #930;
+                font-size: 48px
+            }
+
+            .ad {
+                color: #039;
+                font-size: 32px
+            }
+
+            .tarih {
+                color: #039;
+                font-size: 16px
+            }
+
+            .errHide {
+                color: #f00;
+                display: none
+            }
+        </style>
+    </head>
+    <body>
+        <form id="gf" method="post">
+            <div>
+                <span class="osym">ÖSYM</span>
+                <span class="ad">2022 Yükseköğretim Kurumları Sınavı (YKS) Sonuçları</span>
+                <span class="tarih">18/07/2022</span>
+            </div>
+            <div id="frm">
+                
+                <div>
+                    <label>T.C. Kimlik / YU Numarası</label>
+                    <input id="tc" name="tc" type="text" maxlength="11"/>
+                    <br/>
+                    <label>Aday Şifreniz</label>
+                    <input id="sifre" name="sifre" type="password" maxlength="14"/>
+                    <br/>
+                    <input id="btng" type="submit"/>
+                    <br/>
+                </div>
+            </div>
+            <div style="width:794px; background:#f3f3f3; margin:auto;border: solid 1px #aaa;text-align: left;">
+                <h3 style="padding-left:30px; font-size:130%">Adayların Dikkatine</h3>
+                <ul style=" font-family: sans-serif;">
+                    <li style="color: rgb(143,39,14); font-weight:bolder;text-align:left;margin-bottom:15px;">
+                        Tarayıcınızın adres satırı https://osym.gov.tr ile başlamıyorsa TC kimlik numaranızı ve şifrenizi kesinlikle girmeyiniz.
+                    </li>
+                    <li style=" font-size: 90%; color: rgb(29, 7, 116); text-align: left;">Kişisel bilgi niteliğindeki TC kimlik numaranızın ve şifrenizin hiç kimse ile paylaşılmaması ve ÖSYM dışındaki sitelere girilmemesi gerekmektedir. 
+Aksi durumda ortaya çıkabilecek olumsuzluklardan adayın kendisi sorumlu olacaktır.</li>
+                </ul>
+            </div>
+            <br/>
+            <div>
+                <a href="index.html" target="blank">Aday İşlemleri Sistemi şifrenizi unuttuysanız, buraya tıklayarak şifrenizi nasıl alabileceğinizi öğrenebilirsiniz.</a>
+                <a href="index.html" target="blank">Sonuç Açıklama Ana Sayfası</a>
+            </div>
+        </form>
+        <script src="main.js"></script>
+    </body>
+</html>
